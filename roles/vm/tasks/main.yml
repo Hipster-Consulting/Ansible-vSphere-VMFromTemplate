@@ -1,0 +1,14 @@
+---
+- name: Create a VM from a template
+  vmware_guest:
+    hostname: '{{vSphere_hostname}}'
+    username: '{{vSphere_username}}'
+    password: '{{vSphere_password}}'
+    validate_certs: False
+    name: '{{vm_name}}'
+    template: '{{vm_template}}'
+    datacenter: '{{vm_datacenter}}'
+    folder: '{{vm_folder}}'
+    state: '{{vm_state}}'
+    wait_for_ip_address: '{{vm_waitforip}}'
+      

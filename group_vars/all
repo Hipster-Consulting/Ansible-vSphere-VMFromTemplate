@@ -1,0 +1,12 @@
+---
+# Variables listed here are applicable to all host groups
+
+vSphere_hostname: '192.168.0.1'
+vSphere_username: 'admin'
+vSphere_password: 'vSphere123'
+vm_name:'testnewvm'
+vm_template:'testtemplate'
+vm_datacenter: 'testdatacenter'
+vm_folder: '/DC1/vm'
+vm_state: 'poweredon'
+vm_waitforip: 'yes'
